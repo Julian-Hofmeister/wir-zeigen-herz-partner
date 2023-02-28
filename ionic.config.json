@@ -1,0 +1,7 @@
+{
+  "name": "wir-zeigen-herz-partner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

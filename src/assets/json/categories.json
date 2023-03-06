@@ -1,0 +1,192 @@
+[
+  {
+    "nameDE": "Ausbildung, Weiterbildung, E-Learning",
+    "id": "001",
+    "nameEN": "Training, continuing education and e-learning"
+  },
+  {
+    "nameDE": "Auto, Motorrad, Wohnmobil und Automobilität",
+    "id": "002",
+    "nameEN": "Car, motorcycle, camper and automobility"
+  },
+  {
+    "nameDE": "Babys, Kinder und Spielzeug",
+    "id": "003",
+    "nameEN": "Babies, children and toys"
+  },
+  {
+    "nameDE": "Baumarkt, Werkzeuge und Baustoffe",
+    "id": "004",
+    "nameEN": "DIY, tools and building materials"
+  },
+  {
+    "nameDE": "Beauty und Drogerie",
+    "id": "005",
+    "nameEN": "Beauty and drugstore"
+  },
+  {
+    "nameDE": "Betten, Matratzen und mehr",
+    "id": "006",
+    "nameEN": "Beds, mattresses and more"
+  },
+  {
+    "nameDE": "Bücher, Zeitschriften, Hörbücher und E-Books",
+    "id": "007",
+    "nameEN": "Books, magazines, audio books and e-books"
+  },
+  {
+    "nameDE": "Büro und Homeoffice",
+    "id": "008",
+    "nameEN": "Office and home office"
+  },
+  {
+    "nameDE": "Events und Tickets",
+    "id": "009",
+    "nameEN": "Events and tickets"
+  },
+  {
+    "nameDE": "Fahrräder, Scooter, Roller, E-Bikes, Radsport",
+    "id": "010",
+    "nameEN": "Bicycles, scooters, scooter, e-bikes and cycling"
+  },
+  {
+    "nameDE": "Filme, Serien, Musik und Spiele",
+    "id": "011",
+    "nameEN": "Movies, series, music and games"
+  },
+  {
+    "nameDE": "Fotos und Fotobücher",
+    "id": "012",
+    "nameEN": "Photos and photo books"
+  },
+  {
+    "nameDE": "Garten, Pflanzen und Gartentechnik",
+    "id": "013",
+    "nameEN": "Garden, plants and garden technology"
+  },
+  {
+    "nameDE": "Gastronomie und Hotelleriebedarf",
+    "id": "014",
+    "nameEN": "Gastronomy and hotel supplies"
+  },
+  {
+    "nameDE": "Geld, Finanzen, Recht, Steuern und Versicherung",
+    "id": "015",
+    "nameEN": "Money, finance, law, taxes and insurance"
+  },
+  {
+    "nameDE": "Gesundheit und Pharmazie",
+    "id": "016",
+    "nameEN": "Health and pharmacy"
+  },
+  {
+    "nameDE": "Glücksspiel und Wetten",
+    "id": "017",
+    "nameEN": "Gambling and betting"
+  },
+  {
+    "nameDE": "Gold und Silberkauf",
+    "id": "018",
+    "nameEN": "Gold and silver"
+  },
+  {
+    "nameDE": "Haustiere und Tierbedarf",
+    "id": "019",
+    "nameEN": "Pets and pet supplies"
+  },
+  {
+    "nameDE": "Immobilien und Grundstücke",
+    "id": "020",
+    "nameEN": "Real Estate and Property"
+  },
+  {
+    "nameDE": "Kunst und Handwerk",
+    "id": "021",
+    "nameEN": "Arts and Crafts"
+  },
+  {
+    "nameDE": "Marketing und Werbung",
+    "id": "022",
+    "nameEN": "Marketing and advertising"
+  },
+  {
+    "nameDE": "Lebensmittel und Getränke",
+    "id": "023",
+    "nameEN": "Food and beverages"
+  },
+  {
+    "nameDE": "Mode, Bekleidung, Schuhe, Schmuck und Accessoires",
+    "id": "024",
+    "nameEN": "Fashion, clothing, shoes, jewelry and accessories"
+  },
+  {
+    "nameDE": "Outdoor und Camping",
+    "id": "025",
+    "nameEN": "Outdoor and Camping"
+  },
+  {
+    "nameDE": "Optiker und Hörgeräteakustiker",
+    "id": "026",
+    "nameEN": "Opticians and hearing aid acousticians"
+  },
+  {
+    "nameDE": "Reisen, Hotels und Tourismus",
+    "id": "027",
+    "nameEN": "Travel, Hotels and Tourism"
+  },
+  {
+    "nameDE": "Shiha, Tabak und Zubehör",
+    "id": "028",
+    "nameEN": "Shiha, tobacco and accessories"
+  },
+  {
+    "nameDE": "Singlebörse und mehr",
+    "id": "029",
+    "nameEN": "Singlebörse and more"
+  },
+  {
+    "nameDE": "Smart Home",
+    "id": "030",
+    "nameEN": "Smart Home"
+  },
+  {
+    "nameDE": "Sport und Fitness",
+    "id": "031",
+    "nameEN": "Sports and Fitness"
+  },
+  {
+    "nameDE": "Technik, Elektronik, Foto & Computer",
+    "id": "032",
+    "nameEN": "Technology, electronics, photo and computer"
+  },
+  {
+    "nameDE": "Telefonie, Internet, Fernsehen und Hosting",
+    "id": "033",
+    "nameEN": "Telephony, internet, television and hosting"
+  },
+  {
+    "nameDE": "Universalhändler und Generalisten",
+    "id": "034",
+    "nameEN": "Universal retailers and generalists"
+  },
+  {
+    "nameDE": "Vergleichsportale",
+    "id": "035",
+    "nameEN": "Comparison portals"
+  },
+  {
+    "nameDE": "Verleih und Vermietung",
+    "id": "036",
+    "nameEN": "Rental and Leasing"
+  },
+  {
+    "nameDE": "Versorgung und Energie",
+    "id": "037",
+    "nameEN": "Supply and energy"
+  },
+  {
+    "nameDE": "Wohnen, Möbel, Küche, Bad, Schlafzimmer und Haushalt",
+    "id": "038",
+    "nameEN": "Living, furniture, kitchen, bath, bedroom and household"
+  }
+]

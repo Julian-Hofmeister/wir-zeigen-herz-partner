@@ -1,27 +1,318 @@
-#container {
+ion-col {
+  padding: 0;
+}
+
+ion-list{
+  background-color: white !important;
+}
+
+ion-content {
+  background-color: white !important;
+  --background: white !important;
+}
+
+.header {
+  background: url("/assets/imgs/football.jpg");
+  height: 40rem;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+    .center {
+      padding: 0 2rem;
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+
+      img {
+        width: 50rem;
+        object-fit: cover;
+        margin: 0;
+      }
+    }
+  }
+
+.translation-box {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 5rem;
+  padding: .45rem 1rem .4rem;
+  background-color: white;
+  border-radius: 9999px;
+
+  p {
+    color: #1a1a1a;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.arrow-icon {
+  margin: .5rem 0 0 .5rem;
+  color: var(--ion-color-primary);
+}
+
+.filter-text {
+  color: var(--ion-color-primary);
+  text-align: end;
+  margin-top: 8px;
+}
+
+.link-btn {
+  margin: .25rem 0 0;
+  color: var(--ion-color-primary)
+}
+
+
+.filter-col {
+  p {
+    margin-bottom: .5rem;
+  }
+  span {
+    margin: .5rem 0 !important;
+  }
+  text-align: end;
+}
+
+ion-item {
+  padding:0;
+}
+
+.region-col {
+  text-align: start;
+
+  p {
+    margin-bottom: .5rem;
+
+  }
+}
+
+ion-searchbar {
+  text-align: left;
+  padding: 0;
+  margin-top: 1.5rem;
+  height: 4rem;
+  --border-radius: 50rem;
+  --icon-color: var(--ion-color-primary);
+  --background: rgba(255, 255, 255);
+
+}
+
+ion-searchbar.md {
+  transform: scale(1.2);
+  margin: 0 auto;
+  width: 83%;
+  margin-top: 2rem;
+  text-align: left;
+  --border-radius: 50rem;
+  --box-shadow: none;
+  --icon-color: var(--ion-color-primary);
+  --background: rgb(255, 255, 255);
+  border: 0px var(--ion-color-primary) solid;
+  border-radius: 50rem;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+  span {
+    padding: 0;
+    margin: 0 0 .3rem;
+  }
+
+  ion-icon {
+    --color: var(--ion-color-primary)
+  }
+
+  ion-label {
+    color: var(--ion-color-primary);
+    cursor: pointer;
+
+  }
+}
+
+ion-item {
+  max-width: 100%;
+  margin-left: -.5rem
+}
+
+ion-select {
+  --placeholder-color: var(--ion-color-primary);
+  --placeholder-opacity: 1;
+  width: 100%;
+  justify-content: center;
+}
+
+ion-select::part(placeholder),
+ion-select::part(text) {
+  flex: 0 0 auto;
+}
+
+ion-select::part(text) {
+  color: var(--ion-color-primary);
+}
+
+ion-select::part(icon) {
+  color: var(--ion-color-primary);
+  opacity: 1;
+}
+
+ion-select-option {
+  color: var(--ion-color-dark);
+}
+
+
+ion-fab-button{
+  --box-shadow: none;
+  ion-icon {
+    color: var(--ion-color-dark);
+  }
+}
+
+ion-item {
+  --background: rgba(255, 255, 255, 0);
+  --border-radius: 9999px;
+}
+.modal-col {
+
   text-align: center;
+  justify-content: center;
 
   position: absolute;
-  left: 0;
-  right: 0;
   top: 50%;
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+
+  p {
+    font-family: "Poppins", serif;
+    font-size: 1rem;
+    text-transform: none;
+    margin: 0 2rem;
+    font-weight: 600;
+  }
+
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.cross-icon {
+  margin: .5rem 0;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
 
-  color: #8c8c8c;
-
-  margin: 0;
+.country {
+  margin: 1rem;
 }
 
-#container a {
+.leave-btn {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  color: white;
   text-decoration: none;
+
+  span {
+    color: white;
+    margin-right: 5px;
+  }
+  p {
+
+    display: inline-block;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "Poppins";
+
+
+  }
 }
+
+ion-modal {
+  --border-radius: 30px;
+  ion-fab-button {
+    margin: 1rem;
+  }
+
+  .modal-col {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header{
+    height: 21rem;
+    background: url("/assets/imgs/football.jpg") no-repeat;
+    background-size: cover;
+    .center {
+      margin-top: 1rem;
+    }
+  }
+
+  .translation-box {
+    p {
+      color: white !important;
+    }
+  }
+
+  .leave-btn {
+    top: 1rem;
+    left: 1rem;
+     p {
+       font-size: 1rem;
+       font-weight: 500;
+     }
+    span {
+      font-size: .9rem;
+    }
+  }
+
+
+
+  ion-searchbar.md {
+    transform: scale(1);
+    width: 100%;
+  }
+
+  ion-searchbar {
+    margin-top: 1rem;
+  }
+
+  ion-modal {
+    --border-radius: 0;
+
+    ion-fab-button {
+      margin: .5rem;
+    }
+
+    .modal-col {
+      padding: 1rem;
+    }
+  }
+
+  .translation-box {
+    top: 1rem;
+    right: 1rem;
+    width: 5rem;
+    padding: .25rem 1rem .3rem;
+    background-color: rgba(0,0,0,0);
+    border-radius: 9999px;
+
+    p {
+      padding: 0;
+      margin: 0;
+      color: var(--ion-color-light);
+      font-size: 1rem;
+    }
+  }
+}
+
+

@@ -1,0 +1,19 @@
+{
+
+  "search": "Search Onlineshop",
+  "cancel": "Cancel",
+  "filter": "Categories",
+  "translationBtn": "DE \uD83C\uDDE9\uD83C\uDDEA",
+
+  "selectCountry": "Select Country",
+
+  "toHome": "To main page",
+
+  "germany": "Germany",
+  "austria": "Austria",
+  "switzerland": "Switzerland",
+  "worldwide": "Worldwide",
+
+  "selectCountryText": "Please select the country you live in so that all links work properly and the commission can be donated."
+
+}

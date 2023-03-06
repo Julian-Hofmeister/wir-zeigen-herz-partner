@@ -1,20 +1,92 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"/>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="header">
+      <div class="center">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        <img src="/assets/imgs/logo-white.png" alt="">
+
+        <ion-searchbar color="light" (ionInput)="filterList($event)" [placeholder]="'search' | translate"></ion-searchbar>
+
+        <ion-row class="space-between">
+          <ion-col size="4.5" class="region-col">
+            <ion-label id="open-modal" (click)="openModal(true)">{{this.country ? (country.value | translate) : ("selectCountry" | translate)}}</ion-label>
+          </ion-col>
+
+          <ion-item *ngIf="!filter" lines="none" class="filter-co">
+            <ion-select interface="action-sheet" mode="md" okText="Okay" [cancelText]="'cancel' | translate"
+                        [placeholder]="'filter' | translate" (ionChange)="filterCategories($event)"
+                        #selectCategory>
+              <ion-list *ngFor="let option of categories">
+                <ion-select-option
+                  [value]="option">{{this.language === "en" ? option.nameEN : option.nameDE }}</ion-select-option>
+              </ion-list>
+            </ion-select>
+          </ion-item>
+
+          <ion-col *ngIf="filter" class="filter-col" size="6.25">
+            <p class="filter-text">{{this.language === "en" ? filter.nameEN : filter.nameDE}}</p>
+          </ion-col>
+          <ion-col *ngIf="filter" class="filter-col" size="1.25">
+            <span class="material-icons-outlined arrow-icon cross-icon" (click)="onClearCategoryFilter()">clear</span>
+          </ion-col>
+
+        </ion-row>
+      </div>
+
   </div>
+
+  <a href="https://www.wirzeigenherz.eu" class="leave-btn">
+    <span class="material-icons-outlined">arrow_back_ios</span>
+    <p>{{"toHome" | translate}}</p>
+  </a>
+
+  <div class="translation-box" (click)="switchLanguage()">
+    <p>{{"translationBtn" | translate}}</p>
+  </div>
+
+  <ion-row>
+    <ion-col size-md="12" size-lg="8" offset-lg="2">
+      <div *ngIf="!country">
+        <ion-list *ngFor="let partner of loadedPartner">
+          <app-partner-card (click)="openModal(true)" [partner]="partner" [country]="country"></app-partner-card>
+        </ion-list>
+      </div>
+
+
+      <div *ngIf="!searchTerm && !filter">
+        <ion-list *ngFor="let partner of partner">
+          <app-partner-card [partner]="partner" [country]="country"></app-partner-card>
+        </ion-list>
+      </div>
+
+      <div *ngIf="searchTerm || filter">
+        <ion-list *ngFor="let partner of filteredPartner">
+          <app-partner-card [partner]="partner" [country]="country"></app-partner-card>
+        </ion-list>
+      </div>
+    </ion-col>
+  </ion-row>
 </ion-content>
+
+
+<ion-modal trigger="open-modal" [isOpen]="isModalOpen" (didDismiss)="onDidDismiss()">
+  <ng-template>
+    <ion-content>
+      <ion-fab-button color="light-shade" (click)="openModal(false)">
+        <ion-icon name="close" size="large"></ion-icon>
+      </ion-fab-button>
+      <ion-col class="modal-col">
+        <p>{{"selectCountryText" | translate}}</p>
+        <br/>
+        <ion-item lines="none" class="country">
+          <ion-select interface="popover" [placeholder]="country ? (country.value | translate) : 'Land auswählen'" (ionChange)="selectCountry($event); openModal(false)" >
+            <ion-select-option  *ngFor="let country of countries" [value]="country">{{country.value | translate}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+      </ion-col>
+    </ion-content>
+  </ng-template>
+</ion-modal>

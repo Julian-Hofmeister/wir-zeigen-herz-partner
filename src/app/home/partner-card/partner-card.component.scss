@@ -1,0 +1,76 @@
+.partner-card {
+  text-align: start;
+  border-radius: 20px;
+  margin: .8rem .8rem .8rem;
+  width: calc(100% - 1.6rem);
+  height: 65px;
+  cursor: pointer;
+  background-color: #ffffff;
+
+
+
+  .main-row {
+    height: 100%;
+    align-items: center;
+
+    ion-col {
+      margin: 0;
+      justify-content: center;
+
+
+      img {
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+        max-height: 46px;
+        padding: .5rem;
+        margin-top: 4px;
+      }
+    }
+
+    h3 {
+      font-weight: 600;
+      font-family: "Poppins", serif;
+      font-size: 1.2rem;
+      padding: 0;
+      margin: 0;
+      color: #1a1a1a;
+    }
+
+    p {
+      font-size: 1.8rem !important;
+      color: #1a1a1a;
+      margin: 5px 1rem 0 0;
+    }
+
+
+
+  }
+}
+
+
+.ar {
+  text-align: right;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    .partner-card {
+      color: green;
+    }
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode variables go here */
+  }
+}
+
+/* Fallback for older browsers or manual mode */
+body.dark {
+  .partner-card {
+    background-color: green;
+  }
+}

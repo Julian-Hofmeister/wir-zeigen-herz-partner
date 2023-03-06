@@ -11,7 +11,7 @@
 
         <ion-row class="space-between">
           <ion-col size="4.5" class="region-col">
-            <ion-label id="open-modal" (click)="openModal(true)">{{this.country ? (country.value | translate) : ("selectCountry" | translate)}}</ion-label>
+            <ion-label id="open-modal" (click)="openCountryModal()">{{this.country ? (country.value | translate) : ("selectCountry" | translate)}}</ion-label>
           </ion-col>
 
           <ion-item *ngIf="!filter" lines="none" class="filter-co">
@@ -50,7 +50,7 @@
     <ion-col size-md="12" size-lg="8" offset-lg="2">
       <div *ngIf="!country">
         <ion-list *ngFor="let partner of loadedPartner">
-          <app-partner-card (click)="openModal(true)" [partner]="partner" [country]="country"></app-partner-card>
+          <app-partner-card (click)="openCountryModal()" [partner]="partner" [country]="country"></app-partner-card>
         </ion-list>
       </div>
 
@@ -71,17 +71,17 @@
 </ion-content>
 
 
-<ion-modal trigger="open-modal" [isOpen]="isModalOpen" (didDismiss)="onDidDismiss()">
+<ion-modal trigger="open-modal" [isOpen]="isModalOpen" (didDismiss)="closeCountryModal()">
   <ng-template>
     <ion-content>
-      <ion-fab-button color="light-shade" (click)="openModal(false)">
+      <ion-fab-button color="light-shade" (click)="openCountryModal()">
         <ion-icon name="close" size="large"></ion-icon>
       </ion-fab-button>
       <ion-col class="modal-col">
         <p>{{"selectCountryText" | translate}}</p>
         <br/>
         <ion-item lines="none" class="country">
-          <ion-select interface="popover" [placeholder]="country ? (country.value | translate) : 'Land auswählen'" (ionChange)="selectCountry($event); openModal(false)" >
+          <ion-select interface="popover" [placeholder]="country ? (country.value | translate) : ('selectCountry' | translate)" (ionChange)="selectCountry($event)" >
             <ion-select-option  *ngFor="let country of countries" [value]="country">{{country.value | translate}}</ion-select-option>
           </ion-select>
         </ion-item>

@@ -9,6 +9,7 @@ import {PartnerService} from "./partner.service";
 import categories from '../../assets/json/categories.json';
 import partnerData from '../../assets/json/partner.json';
 import countries from '../../assets/json/countries.json';
+import {Preferences} from "@capacitor/preferences";
 
 
 @Component({
@@ -63,24 +64,22 @@ export class HomePage {
   ngOnInit() {
     this.categories = categories;
     this.countries = countries;
-
-    this.loadedPartner = partnerData as Partner[]
-
-
+    this.loadedPartner = partnerData;
   }
 
+  // ----------------------------------------------------------------------------------------------
 
   ionViewWillEnter() {
-    if(!this.country) {
-      // this.openModal(true);
-    }
-
     this.language = this.translateService.currentLang;
-    this.getCountry();
 
-
-   this.fillPartner();
+    this.getCountry().then(r =>
+      this.fillPartner()
+    )
   }
+
+  // ----------------------------------------------------------------------------------------------
+
+
   //#endregion
 
   //#region [ EMITTER ] ///////////////////////////////////////////////////////////////////////////
@@ -96,8 +95,6 @@ export class HomePage {
   filterList(evt: any) {
     this.searchTerm = evt.srcElement.value;
 
-    console.log(this.searchTerm)
-
     if (!this.searchTerm) {return;}
 
     this.filteredPartner = this.partnerService.filterList(this.searchTerm, this.partner);
@@ -110,10 +107,9 @@ export class HomePage {
   filterCategories(evt: any) {
     this.filter = evt.detail.value;
 
-    console.log(this.filter)
-
     this.filteredPartner = this.partnerService.filterCategories(this.filter!.id, this.partner);
 
+    this.searchTerm = '';
   }
 
   // ----------------------------------------------------------------------------------------------
@@ -127,54 +123,55 @@ export class HomePage {
 
   switchLanguage() {
     const lang = this.translateService.currentLang === "en" ? "de" : "en";
-    console.log(this.translateService.currentLang)
     this.translateService.use(lang);
 
-    console.log(this.translateService.currentLang)
     this.language = this.translateService.currentLang;
   }
 
   // ----------------------------------------------------------------------------------------------
 
-  selectCountry(evt: any) {
+  async selectCountry(evt: any) {
     this.country = evt.detail.value;
 
-    localStorage.setItem('country', JSON.stringify(this.country));
+    await Preferences.set({
+      key: 'country',
+      value: JSON.stringify(this.country),
+    });
 
     this.fillPartner();
 
-    this.openModal(false);
+    this.closeCountryModal();
+  }
+
+  // ----------------------------------------------------------------------------------------------
+
+  openCountryModal() {
+    this.isModalOpen = true;
+  }
+
+  // ----------------------------------------------------------------------------------------------
+
+  closeCountryModal() {
+    this.isModalOpen = false;
   }
 
   //#endregion
 
   //#region [ PRIVATE ] ///////////////////////////////////////////////////////////////////////////
 
-  getCountry(){
-    this.country = JSON.parse(localStorage.getItem("country")!);
-
-    console.log(this.country);
-
-
-    if(this.country) {return}
-
-    // this.modal.present().then();
-  }
-
-  // ----------------------------------------------------------------------------------------------
-
-  openModal(isOpen: boolean) {
-    this.isModalOpen = isOpen;
-  }
-
-  onDidDismiss() {
-    this.isModalOpen = false;
+  private async getCountry() {
+    await Preferences.get({key: 'country'}).then(
+      (country) => {
+        if (country.value) {
+          this.country = JSON.parse(country.value)
+        }
+      }
+    );
   }
 
   // ----------------------------------------------------------------------------------------------
 
   fillPartner() {
-
     this.partner = [];
 
     for(let partner of this.loadedPartner) {
@@ -190,8 +187,6 @@ export class HomePage {
       else if(this.country.value === "worldwide" && partner.linkWW !== "") {
         this.partner.push(partner);
       }
-
-
     }
   }
   //#endregion

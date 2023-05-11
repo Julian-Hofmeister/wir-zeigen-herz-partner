@@ -14,6 +14,6 @@
   "switzerland": "Switzerland",
   "worldwide": "Worldwide",
 
-  "selectCountryText": "Please select the country you live in so that all links work properly and the commission can be donated."
-
+  "selectCountryText": "Please select the country you live in so that all links work properly and the commission can be donated.",
+  "selectCountryTextShort": "Please select your country for all links to work properly. For a better overview, we have divided the partner programs into different categories."
 }

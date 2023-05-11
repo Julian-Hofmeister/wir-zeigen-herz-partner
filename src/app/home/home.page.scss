@@ -142,8 +142,7 @@ ion-item {
 ion-select {
   --placeholder-color: var(--ion-color-primary);
   --placeholder-opacity: 1;
-  width: 100%;
-  justify-content: center;
+  justify-content: start;
 }
 
 ion-select::part(placeholder),
@@ -249,11 +248,14 @@ ion-modal {
 
 @media only screen and (max-width: 600px) {
   .header{
-    height: 21rem;
+    height: 27rem;
     background: url("/assets/imgs/football.jpg") no-repeat;
     background-size: cover;
     .center {
-      margin-top: 1rem;
+      margin-top: 2.5rem;
+    }
+    ion-searchbar {
+      margin-top: 0rem;
     }
   }
 
@@ -313,6 +315,42 @@ ion-modal {
       font-size: 1rem;
     }
   }
+
+  .country-info-card {
+    margin-bottom: 3rem;
+  }
 }
 
 
+.country-info-card {
+  position: relative;
+  max-width: 30rem;
+  background-color: #f1f1f1;
+  text-align: center;
+  border-radius: 15px;
+  padding: .5rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  ion-icon {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 1.2rem;
+  }
+  p {
+    margin-right: .8rem;
+    margin-left: .5rem;
+    color: var(--ion-color-dark);
+  }
+}
+
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+.move-left {
+  padding: -1rem;
+  margin-left: -1rem;
+}

@@ -35,13 +35,16 @@ export class HomePage {
   partner: Partner[] = [];
   loadedPartner: Partner[] = [];
   categories: Category[];
-  countries: Country[];
+  countries: string[];
 
   language: string = this.translateService.currentLang;
-  country: Country;
+  country: string;
   countryName: string;
 
   isModalOpen = false;
+  timeout: any = null;
+
+  notShowAgain = false;
 
 
   //#endregion
@@ -63,7 +66,7 @@ export class HomePage {
 
   ngOnInit() {
     this.categories = categories;
-    this.countries = countries;
+    this.countries = ["germany", "austria", "switzerland", "worldwide"];
     this.loadedPartner = partnerData;
   }
 
@@ -75,6 +78,13 @@ export class HomePage {
     this.getCountry().then(r =>
       this.fillPartner()
     )
+  }
+
+  // ----------------------------------------------------------------------------------------------
+
+  showNotAgain() {
+    localStorage.setItem('notShowAgain', 'true');
+    this.notShowAgain = true;
   }
 
   // ----------------------------------------------------------------------------------------------
@@ -93,13 +103,22 @@ export class HomePage {
   //#region [ PUBLIC ] ////////////////////////////////////////////////////////////////////////////
 
   filterList(evt: any) {
-    this.searchTerm = evt.srcElement.value;
 
-    if (!this.searchTerm) {return;}
 
-    this.filteredPartner = this.partnerService.filterList(this.searchTerm, this.partner);
+    clearTimeout(this.timeout);
+    const $this = this;
+    this.timeout = setTimeout(function () {
+      if (evt.keyCode != 13) {
+        $this.searchTerm = evt.srcElement.value;
 
-    this.onClearCategoryFilter();
+        if (!$this.searchTerm) {return;}
+
+        $this.filteredPartner = $this.partnerService.filterList($this.searchTerm, $this.partner);
+
+        $this.onClearCategoryFilter();
+      }
+    }, 1000);
+
   }
 
   // ----------------------------------------------------------------------------------------------
@@ -175,16 +194,16 @@ export class HomePage {
     this.partner = [];
 
     for(let partner of this.loadedPartner) {
-      if(this.country.value === "germany" && partner.linkDE !== "") {
+      if(this.country === "germany" && partner.linkDE !== "") {
         this.partner.push(partner);
       }
-      else if(this.country.value === "austria" && partner.linkAT !== "") {
+      else if(this.country === "austria" && partner.linkAT !== "") {
         this.partner.push(partner);
       }
-      else if(this.country.value === "switzerland" && partner.linkCH !== "") {
+      else if(this.country === "switzerland" && partner.linkCH !== "") {
         this.partner.push(partner);
       }
-      else if(this.country.value === "worldwide" && partner.linkWW !== "") {
+      else if(this.country === "worldwide" && partner.linkWW !== "") {
         this.partner.push(partner);
       }
     }

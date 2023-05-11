@@ -1,192 +1,167 @@
 [
   {
-    "nameDE": "Ausbildung, Weiterbildung, E-Learning",
+    "nameDE": "AUSBILDUNG, WEITERBILDUNG UND E-LEARNING",
     "id": "001",
-    "nameEN": "Training, continuing education and e-learning"
+    "nameEN": "EDUCATION, TRAINING AND E-LEARNING"
   },
   {
-    "nameDE": "Auto, Motorrad, Wohnmobil und Automobilität",
+    "nameDE": "AUTO, MOTORRAD UND WOHNMOBILE",
     "id": "002",
-    "nameEN": "Car, motorcycle, camper and automobility"
+    "nameEN": "CAR, MOTORCYCLE AND MOTORHOMES"
   },
   {
-    "nameDE": "Babys, Kinder und Spielzeug",
+    "nameDE": "BABYS, KINDER UND SPIELZEUG",
     "id": "003",
-    "nameEN": "Babies, children and toys"
+    "nameEN": "BABIES, CHILDREN AND TOYS"
   },
   {
-    "nameDE": "Baumarkt, Werkzeuge und Baustoffe",
+    "nameDE": "BAUMARKT, WERKZEUGE UND BAUSTOFFE",
     "id": "004",
-    "nameEN": "DIY, tools and building materials"
+    "nameEN": "HARDWARE, TOOLS AND BUILDING MATERIALS"
   },
   {
-    "nameDE": "Beauty und Drogerie",
+    "nameDE": "BEAUTY UND DROGERIE",
     "id": "005",
-    "nameEN": "Beauty and drugstore"
+    "nameEN": "BEAUTY AND DRUGSTORE"
   },
   {
-    "nameDE": "Betten, Matratzen und mehr",
+    "nameDE": "BETTEN, MATRATZEN UND MEHR",
     "id": "006",
-    "nameEN": "Beds, mattresses and more"
+    "nameEN": "BEDS, MATTRESSES AND MORE"
   },
   {
-    "nameDE": "Bücher, Zeitschriften, Hörbücher und E-Books",
+    "nameDE": "BÜCHER, ZEITSCHRIFTEN UND E-BOOKS",
     "id": "007",
-    "nameEN": "Books, magazines, audio books and e-books"
+    "nameEN": "BOOKS, MAGAZINES AND E-BOOKS"
   },
   {
-    "nameDE": "Büro und Homeoffice",
+    "nameDE": "BÜRO UND HOMEOFFICE",
     "id": "008",
-    "nameEN": "Office and home office"
+    "nameEN": "OFFICE AND HOME OFFICE"
   },
   {
-    "nameDE": "Events und Tickets",
+    "nameDE": "EVENTS UND TICKETS",
     "id": "009",
-    "nameEN": "Events and tickets"
+    "nameEN": "EVENTS AND TICKETS"
   },
   {
-    "nameDE": "Fahrräder, Scooter, Roller, E-Bikes, Radsport",
+    "nameDE": "FAHRRÄDER, SCOOTER, ROLLER UND E-BIKES",
     "id": "010",
-    "nameEN": "Bicycles, scooters, scooter, e-bikes and cycling"
+    "nameEN": "BICYCLES, SCOOTERS AND E-BIKES"
   },
   {
-    "nameDE": "Filme, Serien, Musik und Spiele",
+    "nameDE": "FOTOS, FOTOBÜCHER UND DRUCK",
     "id": "011",
-    "nameEN": "Movies, series, music and games"
+    "nameEN": "PHOTOS, PHOTO BOOKS AND PRINTING"
   },
   {
-    "nameDE": "Fotos und Fotobücher",
+    "nameDE": "GARTEN, PFLANZEN UND BLUMEN",
     "id": "012",
-    "nameEN": "Photos and photo books"
+    "nameEN": "GARDEN, PLANTS AND FLOWERS"
   },
   {
-    "nameDE": "Garten, Pflanzen und Gartentechnik",
+    "nameDE": "GESUNDHEIT UND PHARMAZIE",
     "id": "013",
-    "nameEN": "Garden, plants and garden technology"
+    "nameEN": "HEALTH AND PHARMACY"
   },
   {
-    "nameDE": "Gastronomie und Hotelleriebedarf",
+    "nameDE": "GOLD, SILBER UND SCHMUCK",
     "id": "014",
-    "nameEN": "Gastronomy and hotel supplies"
+    "nameEN": "GOLD, SILVER AND JEWELRY"
   },
   {
-    "nameDE": "Geld, Finanzen, Recht, Steuern und Versicherung",
+    "nameDE": "HAUSTIERE UND TIERBEDARF",
     "id": "015",
-    "nameEN": "Money, finance, law, taxes and insurance"
+    "nameEN": "PETS AND PET SUPPLIES"
   },
   {
-    "nameDE": "Gesundheit und Pharmazie",
+    "nameDE": "HOBBY, HAUS, KUNST UND HANDWERK",
     "id": "016",
-    "nameEN": "Health and pharmacy"
+    "nameEN": "HOBBY, HOME, ARTS AND CRAFTS"
   },
   {
-    "nameDE": "Glücksspiel und Wetten",
+    "nameDE": "LEBENSMITTEL UND GETRÄNKE",
     "id": "017",
-    "nameEN": "Gambling and betting"
+    "nameEN": "FOOD AND BEVERAGES"
   },
   {
-    "nameDE": "Gold und Silberkauf",
+    "nameDE": "LOTTO UND WETTEN",
     "id": "018",
-    "nameEN": "Gold and silver"
+    "nameEN": "LOTTERY AND BETTING"
   },
   {
-    "nameDE": "Haustiere und Tierbedarf",
+    "nameDE": "MARKETING, WERBUNG UND SOFTWARE",
     "id": "019",
-    "nameEN": "Pets and pet supplies"
+    "nameEN": "MARKETING, ADVERTISING AND SOFTWARE"
   },
   {
-    "nameDE": "Immobilien und Grundstücke",
+    "nameDE": "MODE, BEKLEIDUNG, SCHUHE UND ACCESSOIRES",
     "id": "020",
-    "nameEN": "Real Estate and Property"
+    "nameEN": "FASHION, CLOTHING, SHOES AND ACCESSORIES"
   },
   {
-    "nameDE": "Kunst und Handwerk",
+    "nameDE": "OPTIKER UND HÖRGERÄTEAKUSTIKER",
     "id": "021",
-    "nameEN": "Arts and Crafts"
+    "nameEN": "OPTICIANS AND HEARING AID ACOUSTICIANS"
   },
   {
-    "nameDE": "Marketing und Werbung",
+    "nameDE": "OUTDOOR UND CAMPING",
     "id": "022",
-    "nameEN": "Marketing and advertising"
+    "nameEN": "OUTDOOR AND CAMPING"
   },
   {
-    "nameDE": "Lebensmittel und Getränke",
+    "nameDE": "REISEN, HOTELS UND TOURISMUS",
     "id": "023",
-    "nameEN": "Food and beverages"
+    "nameEN": "TRAVEL, HOTELS AND TOURISM"
   },
   {
-    "nameDE": "Mode, Bekleidung, Schuhe, Schmuck und Accessoires",
+    "nameDE": "SINGLEBÖRSE UND MEHR",
     "id": "024",
-    "nameEN": "Fashion, clothing, shoes, jewelry and accessories"
+    "nameEN": "SINGLES AND MORE"
   },
   {
-    "nameDE": "Outdoor und Camping",
+    "nameDE": "SMART HOME",
     "id": "025",
-    "nameEN": "Outdoor and Camping"
+    "nameEN": "SMART HOME"
   },
   {
-    "nameDE": "Optiker und Hörgeräteakustiker",
+    "nameDE": "SPORT UND FITNESS",
     "id": "026",
-    "nameEN": "Opticians and hearing aid acousticians"
+    "nameEN": "SPORTS AND FITNESS"
   },
   {
-    "nameDE": "Reisen, Hotels und Tourismus",
+    "nameDE": "TECHNIK, ELEKTRONIK, FOTO UND COMPUTER",
     "id": "027",
-    "nameEN": "Travel, Hotels and Tourism"
+    "nameEN": "TECHNOLOGY, ELECTRONICS, PHOTO AND COMPUTER"
   },
   {
-    "nameDE": "Shiha, Tabak und Zubehör",
+    "nameDE": "TELEFONIE, INTERNET, FERNSEHEN UND HOSTING",
     "id": "028",
-    "nameEN": "Shiha, tobacco and accessories"
+    "nameEN": "TELEPHONY, INTERNET, TV AND HOSTING"
   },
   {
-    "nameDE": "Singlebörse und mehr",
+    "nameDE": "UNIVERSALHÄNDLER UND GENERALISTEN",
     "id": "029",
-    "nameEN": "Singlebörse and more"
+    "nameEN": "UNIVERSAL RETAILERS AND GENERALISTS"
   },
   {
-    "nameDE": "Smart Home",
+    "nameDE": "VERGLEICHSPORTALE, GELD UND FINANZEN",
     "id": "030",
-    "nameEN": "Smart Home"
+    "nameEN": "COMPARISON PORTALS, MONEY AND FINANCE"
   },
   {
-    "nameDE": "Sport und Fitness",
+    "nameDE": "VERLEIH UND VERMIETUNG",
     "id": "031",
-    "nameEN": "Sports and Fitness"
+    "nameEN": "RENTAL AND LEASING"
   },
   {
-    "nameDE": "Technik, Elektronik, Foto & Computer",
+    "nameDE": "VERSORGUNG UND ENERGIE",
     "id": "032",
-    "nameEN": "Technology, electronics, photo and computer"
+    "nameEN": "UTILITIES AND ENERGY"
   },
   {
-    "nameDE": "Telefonie, Internet, Fernsehen und Hosting",
+    "nameDE": "WOHNEN, MÖBEL, KÜCHE, BAD UND HAUSHALT",
     "id": "033",
-    "nameEN": "Telephony, internet, television and hosting"
-  },
-  {
-    "nameDE": "Universalhändler und Generalisten",
-    "id": "034",
-    "nameEN": "Universal retailers and generalists"
-  },
-  {
-    "nameDE": "Vergleichsportale",
-    "id": "035",
-    "nameEN": "Comparison portals"
-  },
-  {
-    "nameDE": "Verleih und Vermietung",
-    "id": "036",
-    "nameEN": "Rental and Leasing"
-  },
-  {
-    "nameDE": "Versorgung und Energie",
-    "id": "037",
-    "nameEN": "Supply and energy"
-  },
-  {
-    "nameDE": "Wohnen, Möbel, Küche, Bad, Schlafzimmer und Haushalt",
-    "id": "038",
-    "nameEN": "Living, furniture, kitchen, bath, bedroom and household"
+    "nameEN": "HOUSING, FURNITURE, KITCHEN, BATH AND HOUSEHOLD"
   }
 ]

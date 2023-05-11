@@ -14,8 +14,8 @@ export class AppComponent {
   }
 
   initializeApp() {
-    this.translate.setDefaultLang('de'); // add this
-    this.translate.use('de'); //--> I didn't had this line before
+    this.translate.setDefaultLang('de');
+    this.translate.use('de');
   }
 
 }
